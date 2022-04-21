@@ -24,7 +24,8 @@ public class MortgageCalcCustom {
         numberOfPayments = years * monthsInYear;
 
 
-        double mortgage = principal * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
+        double mortgage = principal
+                * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
                 / (Math.pow(1 + monthlyInterest, numberOfPayments) -1);
 
         double roundMortgage = Math.round(mortgage);
